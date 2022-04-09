@@ -1,6 +1,7 @@
 # Path-Finding
 
 Author: Matt Stroud
+
 Date Completed: April 9, 2022
 
 This code holds 5 path finding algorithms written in javascript:
