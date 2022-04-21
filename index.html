@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Path Finder</title>
+		<script src="libraries/p5.js"></script>
+		<!-- <script src="libraries/p5.sound.js"></script> -->
+		<script src="sketch.js"></script>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			canvas {
+				margin: auto;
+			}
+            
+		</style>
+        <link rel="stylesheet" href="styles/style.css">
+        
+	</head>
+	<body style="background: rgb(10, 10, 10);">
+		<div class="menu">
+			<div id="clicky-bits">
+				<!-- <a href="https://www.flaticon.com/free-icons/play-button" title="play button icons">Play button icons created by Roundicons - Flaticon</a></a> 
+				<a href="https://www.flaticon.com/free-icons/pause" title="pause icons">Pause icons created by feen - Flaticon</a>
+				<a href="https://www.flaticon.com/free-icons/refresh" title="refresh icons">Refresh icons created by Roundicons - Flaticon</a>
+				<a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Vectors Market - Flaticon</a>-->
+				<img src="./play-button.png" class="button" onclick="startSim()">
+				<img src="./pause.png" class="button" onclick="stopSim()">
+				<img src="./refresh.png" class="button" onclick="restart()">
+				<img src="./cancel.png" class="button" onclick="clearWalls()">
+			</div>
+			<div class="box">
+				<label class="container">BFS
+					<input type="radio" name="alg" checked="checked" onclick="bfson()">
+					<span class="checkmark"></span>
+				  </label>
+				  
+				  <label class="container">DFS
+					<input type="radio" name="alg" onclick="dfson()">
+					<span class="checkmark"></span>
+				  </label>
+				  
+				  <label class="container">Dijkstra
+					<input type="radio" name="alg" onclick="dijon()">
+					<span class="checkmark"></span>
+				  </label>
+
+				  <label class="container">Greedy
+					<input type="radio" name="alg" onclick="greedon()">
+					<span class="checkmark"></span>
+				  </label>
+				  
+				  <label class="container">A*
+					<input type="radio" name="alg" onclick="aon()">
+					<span class="checkmark"></span>
+				  </label>
+			</div>
+			<div class="signature">
+				<div class="author">
+					<a class = 'click-prof' href="./index.html"><img id='profile' src="./profile.jpg" alt="profile"></a>
+					<div class="about">
+						<span>by Matt Stroud</span>
+						<div class="ref">
+							<a class="icons" href="https://www.flaticon.com/" target="_blank">Icons</a> 
+							<a class="icons" href="https://github.com/mwstroud/Path-Finding" target="_blank">Source Code</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+    </body>
+</html>
